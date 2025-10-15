@@ -6,9 +6,9 @@ import { redirect } from "react-router-dom";
 export default function HeroSection() {
   return (
     <section className="bg-secondary text-dark py-16 md:py-24">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4 ">
         {/* Konten Kiri: Title, Subtitle, Button */}
-        <div className="md:w-1/2 text-center md:text-left">
+        <div className="md:w-1/2 text-center md:text-left mx-4">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-primary">
             {AppConst.websiteName} <br /> Gaya Klasik, Sentuhan Modern.
           </h1>
@@ -23,12 +23,6 @@ export default function HeroSection() {
               className="px-8 py-6 text-lg"
             >
               Booking Sekarang
-            </Button>
-            <Button
-              variant="outline"
-              className="ml-4 px-8 py-6 text-lg border-primary text-primary hover:bg-primary hover:text-white"
-            >
-              Pelajari Lebih Lanjut
             </Button>
           </div>
         </div>
