@@ -1,34 +1,85 @@
+import { Facebook, Instagram, Twitter } from "lucide-react";
 import { AppConst } from "@/lib/constans";
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-secondary">
-      <div className="container mx-auto grid grid-cols-1 gap-8 p-8 md:grid-cols-3 ">
-        {/* Kolom Nama & Deskripsi */}
+    <footer className="bg-[#1a2430] text-[#e8f1f2]">
+      {/* main section */}
+      <div className="w-full grid grid-cols-1 gap-10 px-6 py-12 md:grid-cols-3">
+        {/* kolom 1 */}
         <div>
           <h3 className="text-lg font-bold text-white">
             {AppConst.websiteName}
           </h3>
-          <p className="mt-2 text-sm">
-            Pengalaman potong rambut premium untuk pria modern.
+          <p className="mt-3 text-sm leading-relaxed text-[#cbd5e1]">
+            Gaya klasik dengan sentuhan modern untuk pria masa kini. Kualitas,
+            kenyamanan, dan kepercayaan diri adalah prioritas kami.
           </p>
         </div>
 
-        {/* Kolom Kontak */}
+        {/* kolom 2 */}
         <div>
-          <h4 className="font-semibold text-white">Contact</h4>
-          <ul className="mt-2 space-y-1 text-sm">
-            <li>Jl. Pahlawan No. 123, Padang</li>
-            <li>(0751) 123-456</li>
-            <li>contact@apexgrooming.com</li>
+          <h4 className="text-base font-semibold text-white">Navigasi</h4>
+          <ul className="mt-3 space-y-2 text-sm text-[#cbd5e1]">
+            <li>
+              <a href="#features" className="hover:text-white">
+                Fitur
+              </a>
+            </li>
+            <li>
+              <a href="#packages" className="hover:text-white">
+                Paket
+              </a>
+            </li>
+            <li>
+              <a href="#capsters" className="hover:text-white">
+                Capster
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-white">
+                Kontak
+              </a>
+            </li>
           </ul>
         </div>
+
+        {/* kolom 3 */}
+        <div>
+          <h4 className="text-base font-semibold text-white">Ikuti Kami</h4>
+          <div className="mt-3 flex items-center gap-4">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full p-2 hover:bg-[#243042] transition"
+            >
+              <Facebook className="h-5 w-5 text-[#e8f1f2]" />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full p-2 hover:bg-[#243042] transition"
+            >
+              <Instagram className="h-5 w-5 text-[#e8f1f2]" />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full p-2 hover:bg-[#243042] transition"
+            >
+              <Twitter className="h-5 w-5 text-[#e8f1f2]" />
+            </a>
+          </div>
+        </div>
       </div>
-      <div className="border-t border-gray-700 bg-dark py-4 text-center text-xs text-gray-400">
-        <p>
-          &copy; {AppConst.currentYear} {AppConst.websiteName}. All Rights
-          Reserved.
-        </p>
+
+      {/* copyright */}
+      <div className="border-t border-[#2e3a4b] py-4 text-center text-xs text-[#94a3b8]">
+        © {AppConst.currentYear} {AppConst.websiteName}. Didesain dengan penuh
+        gaya.
       </div>
     </footer>
   );
