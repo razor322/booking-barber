@@ -1,9 +1,9 @@
-import CapstersSection from "@/components/specifics/CapsterSection";
-import FacilitiesSection from "@/components/specifics/FacilitiesSection";
-import FeatureSection from "@/components/specifics/FeatureSection";
-import HeroSection from "@/components/specifics/HeroSection";
-import InfoLocationSection from "@/components/specifics/InfoLocationSection";
-import ServiceSection from "@/components/specifics/ServiceSection";
+import CapstersSection from "@/components/specifics/home/CapsterSection";
+import FacilitiesSection from "@/components/specifics/home/FacilitiesSection";
+import FeatureSection from "@/components/specifics/home/FeatureSection";
+import HeroSection from "@/components/specifics/home/HeroSection";
+import InfoLocationSection from "@/components/specifics/home/InfoLocationSection";
+import ServiceSection from "@/components/specifics/home/ServiceSection";
 import { useEffect } from "react";
 
 export default function HomePage() {

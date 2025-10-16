@@ -1,4 +1,4 @@
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import { AppAssets } from "@/lib/assets";
 import { AppConst } from "@/lib/constans";
 import { redirect } from "react-router-dom";

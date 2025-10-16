@@ -10,7 +10,7 @@ export type Capster = {
   id: string;
   name: string;
   photoUrl: string;
-  socials: Social[]; // tampilkan username media sosial (utama di index 0)
+  socials: Social[];
 };
 
 type Props = {
