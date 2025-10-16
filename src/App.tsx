@@ -4,6 +4,7 @@ import Mainlayout from "./components/layouts/Mainlayot";
 import NotFound from "./pages/NotFound";
 import LoginPage from "./pages/auth/LoginPage";
 import RegisterPage from "./pages/auth/RegisterPage";
+import BookingPage from "./pages/BookingPage";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <Route element={<Mainlayout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/auth/login" element={<LoginPage />} />
-        {/* <Route path="/about" element={<AboutPage />} /> */}
+        <Route path="/booking" element={<BookingPage />} />
       </Route>
       <Route path="/auth/login" element={<LoginPage />} />
       <Route path="/auth/register" element={<RegisterPage />} />
