@@ -1,3 +1,9 @@
-export default function Home() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+import BookingWizard from "@/components/BookingWizard";
+
+export default function App() {
+  return (
+    <div className="min-h-screen bg-background flex items-center justify-center p-4">
+      <BookingWizard />
+    </div>
+  );
 }
