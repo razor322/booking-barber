@@ -12,6 +12,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Scissors, Sparkles, Feather, Crown, Instagram, Twitter, Facebook } from "lucide-react";
+import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import { Scissors, Zap, Sparkles, Feather, Crown } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
